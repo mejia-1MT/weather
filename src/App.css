@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  background-color: #1d1d1d;
 }
 
-.App-link {
-  color: #61dafb;
+:root {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clear-sky {
+  --main-color: #3c8ce1; /* Was sub-color */
+  --sub-color: #2369b2; /* Darker tone */
+  --text-color: whitesmoke;
+}
+
+.few-clouds {
+  --main-color: #b0d4e6;
+  --sub-color: #87b7cd;
+  --text-color: whitesmoke;
+}
+
+.scattered-clouds {
+  --main-color: #d2e4ed;
+  --sub-color: #9cbac6;
+  --text-color: whitesmoke;
+}
+
+.broken-clouds,
+.overcast-clouds {
+  --main-color: #b1c5d5;
+  --sub-color: #8ea9b7;
+  --text-color: whitesmoke;
+}
+
+.shower-rain,
+.light-intensity-drizzle,
+.drizzle,
+.heavy-intensity-drizzle,
+.drizzle-rain,
+.heavy-intensity-drizzle-rain,
+.shower-rain-and-drizzle,
+.heavy-shower-rain-and-drizzle,
+.shower-drizzle,
+.light-intensity-shower-rain {
+  --main-color: #a4c8e1;
+  --sub-color: #7ba9bf;
+  --text-color: whitesmoke;
+}
+
+.rain,
+.light-rain,
+.moderate-rain,
+.heavy-intensity-rain,
+.very-heavy-rain,
+.extreme-rain {
+  --main-color: #b7d3e8;
+  --sub-color: #5a85ab;
+  --text-color: whitesmoke;
+}
+
+.thunderstorm {
+  --main-color: #b2b2b2;
+  --sub-color: #7c7c7c;
+  --text-color: whitesmoke;
+}
+
+.snow,
+.freezing-rain,
+.light-snow,
+.heavy-snow,
+.sleet,
+.light-shower-sleet,
+.shower-sleet,
+.light-rain-and-snow,
+.rain-and-snow,
+.light-shower-snow,
+.shower-snow,
+.heavy-shower-snow {
+  --main-color: #e0e0e0;
+  --sub-color: #b8b8b8;
+  --text-color: black;
+}
+
+.mist,
+.smoke,
+.haze,
+.fog,
+.sand,
+.dust,
+.volcanic-ash,
+.squalls,
+.tornado {
+  --main-color: #c4d6e5;
+  --sub-color: #97a9b7;
+  --text-color: black;
+}
+
+.night {
+  --main-color: #223951;
+  --sub-color: #111f2a;
+  --text-color: whitesmoke;
 }

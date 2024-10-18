@@ -1,0 +1,88 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--text-color);
+  padding: 0 3rem 4rem;
+  border-radius: 0.5rem;
+}
+
+.image,
+.weather,
+.temp,
+.feels,
+.details {
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background: var(--sub-color);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.image {
+  margin-top: 3rem;
+}
+
+.weather {
+  margin-top: -2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.temp {
+  display: inline;
+  position: relative;
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.degree {
+  position: absolute;
+  left: 100%;
+  font-size: 3rem;
+  margin: 0.25rem 0.75rem 0;
+}
+
+.details {
+  display: flex;
+  margin: 0 -2rem;
+}
+
+.details-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.details-div > p {
+  display: flex;
+  align-items: center;
+}
+
+.details-div .icon {
+  color: var(--text-color);
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.details > div {
+  flex-grow: 1;
+}
+
+.details > div > p {
+  font-size: 10px;
+}
